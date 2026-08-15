@@ -1,7 +1,7 @@
-# dsh-wechat-bridge bundle patch
+# super-wechat-bridge bundle patch
 #
 # 通过官方 CLI 安装后自动挂载（dsh.bundle.patch 机制）：
-#   dsh plugin --profile <name> add "file:.../dsh-wechat-bridge"
+#   dsh plugin --profile <name> add "file:.../super-wechat-bridge"
 # 无需再手动编辑 profile 的 cordis.patch.yml。stateDir 等配置走插件 schema 默认值
 # （DSH_HOME 或 ~/.dsh 下的 channels/wechat）；需要覆盖时在 profile patch 里
 # 按 id 追加 config 即可。
@@ -9,4 +9,4 @@
 # 如果 profile 的 cordis.patch.yml 还保留着旧的手动挂载行，请移除，避免双重挂载。
 - insert:
     - id: wechat-bridge
-      name: 'dsh-wechat-bridge'
+      name: 'super-wechat-bridge'

@@ -1,11 +1,11 @@
-// dsh-wechat-bridge —— 浏览器端：设置页（设置 → 微信桥接）
+// super-wechat-bridge —— 浏览器端：设置页（设置 → 微信桥接）
 // 自包含手工编写（无打包器）：client 模块系统以 CJS factory 包裹，内核采纳 { apply, inject }。
 // 数据通道：同源 fetch → 宿主 webServer fenced routes（/_dsh/wechat-bridge/api/*），
 // 信封 { ok, value } / { ok: false, error: { code, message } }，模式对照 dsh-better-sidebar。
 // 模型目录：与 dsh「设置 → 模型」同源（connection.api.llm.providers / llm.models）。
 // 界面无任何入口：全部功能（扫码登录 / 会话管理 / 通道设置）都在设置页内。
 window.__ModuleLoader__.load({
-  id: 'dsh-wechat-bridge',
+  id: 'super-wechat-bridge',
   factory: (require) => {
     const module = { exports: {} }
     const exports = module.exports
@@ -580,7 +580,7 @@ window.__ModuleLoader__.load({
               WechatBridgeSettingsPage,
             )
           }),
-        'dsh-wechat-bridge: settings page',
+        'super-wechat-bridge: settings page',
       )
     }
 

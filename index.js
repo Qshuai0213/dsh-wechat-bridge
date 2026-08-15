@@ -1,4 +1,4 @@
-// dsh-wechat-bridge —— 微信 iLink ClawBot 远程桥接插件（自建）
+// super-wechat-bridge —— 微信 iLink ClawBot 远程桥接插件（自建）
 // 协议与 dsh API 均经实测：
 //   - iLink: GET get_bot_qrcode / get_qrcode_status（登录）、POST getupdates（长轮询收）、POST sendmessage（msg 包裹 + text_item 发）
 //   - dsh 0.1.0-rc.6: ctx.agents.create({ sessionId, meta }) → handle.agent；agent.followup(message)

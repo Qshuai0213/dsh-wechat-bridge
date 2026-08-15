@@ -1,5 +1,5 @@
 {
-  "name": "dsh-wechat-bridge",
+  "name": "super-wechat-bridge",
   "version": "1.0.0",
   "description": "微信 iLink ClawBot 远程桥接插件（DeepSeek Harness）—— 官方 iLink 协议直连，带 Web 设置界面（扫码登录/模型/预设/权限/会话管理）与 24h 自动续期",
   "type": "module",
@@ -13,7 +13,7 @@
   "author": "Qshuai0213",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qshuai0213/dsh-wechat-bridge.git"
+    "url": "git+https://github.com/Qshuai0213/super-wechat-bridge.git"
   },
   "keywords": [
     "deepseek-harness",

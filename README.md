@@ -1,4 +1,4 @@
-# dsh-wechat-bridge
+# super-wechat-bridge
 
 微信 **iLink ClawBot**（腾讯官方微信 Bot 协议）远程桥接插件，把微信消息接进 DeepSeek Harness（dsh）。
 
@@ -26,13 +26,13 @@
 从 GitHub 安装（发布版）：
 
 ```sh
-dsh plugin --profile web add "github:Qshuai0213/dsh-wechat-bridge"
+dsh plugin --profile web add "github:Qshuai0213/super-wechat-bridge"
 ```
 
 本地开发安装：
 
 ```sh
-dsh plugin --profile web add "file:D:/ai工作区/dsh-wechat-bridge"
+dsh plugin --profile web add "file:D:/ai工作区/super-wechat-bridge"
 ```
 
 插件自带 `dsh.bundle.patch`（`cordis.patch.yml`），安装后**自动挂载**，无需手动编辑
@@ -61,7 +61,7 @@ iLink 会话有效期约 **24 小时**（服务端限制，无法延长），插
 3. **命令行**：
 
 ```sh
-node node_modules/dsh-wechat-bridge/login.mjs "<你的 stateDir>"
+node node_modules/super-wechat-bridge/login.mjs "<你的 stateDir>"
 ```
 
 stateDir 默认为 `$DSH_HOME/channels/wechat`（无 `DSH_HOME` 时 `~/.dsh/channels/wechat`）。
