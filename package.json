@@ -1,0 +1,54 @@
+{
+  "name": "dsh-wechat-bridge",
+  "version": "1.0.0",
+  "description": "微信 iLink ClawBot 远程桥接插件（DeepSeek Harness）—— 官方 iLink 协议直连，带 Web 设置界面（扫码登录/模型/预设/权限/会话管理）与 24h 自动续期",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "author": "Qshuai0213",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qshuai0213/dsh-wechat-bridge.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "wechat",
+    "weixin",
+    "ilink",
+    "clawbot",
+    "chatbot",
+    "bridge"
+  ],
+  "files": [
+    "index.js",
+    "client.js",
+    "login.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-agent": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}
